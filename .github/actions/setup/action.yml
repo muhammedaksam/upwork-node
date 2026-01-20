@@ -1,27 +1,40 @@
-name: "Setup Environment"
-description: "Setup pnpm and install dependencies"
+name: 'Setup Upwork Node Client Environment'
+description: 'Setup Node.js, pnpm, and install dependencies for Upwork Node SDK'
 
 inputs:
-  frozen-lockfile:
-    description: "Use --frozen-lockfile for install"
+  node-version:
+    description: 'Node.js version to use'
     required: false
-    default: "false"
+    default: '20'
+  cache:
+    description: 'Enable caching for dependencies'
+    required: false
+    default: 'true'
+  install-deps:
+    description: 'Whether to install dependencies'
+    required: false
+    default: 'true'
+  frozen-lockfile:
+    description: 'Use --frozen-lockfile for install'
+    required: false
+    default: 'true'
 
 runs:
-  using: "composite"
+  using: composite
   steps:
     - name: Setup pnpm
       uses: pnpm/action-setup@v4
       with:
-        version: 8
+        version: 9
 
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '20'
-        cache: 'pnpm'
+        node-version: ${{ inputs.node-version }}
+        cache: ${{ inputs.cache == 'true' && 'pnpm' || '' }}
 
     - name: Install dependencies
+      if: inputs.install-deps == 'true'
       shell: bash
       run: |
         if [ "${{ inputs.frozen-lockfile }}" = "true" ]; then
@@ -29,3 +42,11 @@ runs:
         else
           pnpm install
         fi
+
+    - name: Environment summary
+      shell: bash
+      run: |
+        echo "✅ Environment setup complete!"
+        echo "📦 Node.js: $(node --version)"
+        echo "📦 pnpm: $(pnpm --version)"
+        echo "📁 Working directory: $(pwd)"
