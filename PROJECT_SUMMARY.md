@@ -241,7 +241,6 @@ const result = await client.graphql.query(`
    ```
 
 5. **Set up NPM Trusted Publishing**
-
    - Go to https://www.npmjs.com/settings/[username]/packages
    - Enable 2FA if not already enabled
    - Configure OIDC trusted publishing for your repository

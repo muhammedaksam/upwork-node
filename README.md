@@ -116,10 +116,10 @@ const tokens = await client.auth.getClientCredentialsToken({
 
 ```typescript
 // Automatically handled by the library
-const newTokens = await client.auth.refreshAccessToken();
+const newTokens = await client.auth.refreshAccessToken()
 
 // Or manually with a specific refresh token
-const newTokens = await client.auth.refreshAccessToken(refreshToken);
+const newTokens = await client.auth.refreshAccessToken(refreshToken)
 ```
 
 ### Using Existing Tokens
