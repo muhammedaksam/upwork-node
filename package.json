@@ -1,6 +1,6 @@
 {
   "name": "@muhammedaksam/upwork-node",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Modern Node.js client for Upwork API v2 with OAuth2 and GraphQL support",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -63,5 +63,9 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.53.1"
+  },
+    "publishConfig": {
+    "access": "public",
+    "provenance": true
   }
 }

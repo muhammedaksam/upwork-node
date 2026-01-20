@@ -483,21 +483,6 @@ The MIT license applies to this client library code only, not to the Upwork API 
 
 ## Changelog
 
-### Version 0.1.0 (January 2024)
-
-- Initial release
-- Complete TypeScript implementation
-- OAuth2 support (replacing deprecated OAuth1)
-- GraphQL API support
-- Modern async/await API
-- Automatic token refresh
-- Comprehensive error handling
-- Full type definitions with 642+ types
-- Support for all 127 API operations (75 queries + 52 mutations)
-- Auto-generation tools for types and methods
-- ESLint and Prettier configuration
-- GitHub Actions CI/CD pipeline
-
 For detailed changes and migration guide from OAuth1 libraries, see [CHANGELOG.md](CHANGELOG.md)
 
 ## Support
