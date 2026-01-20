@@ -1,0 +1,10 @@
+# Ignore everything by default
+*
+
+# Include specific files and directories
+!dist/**/*.js
+!dist/**/*.d.ts
+!dist/**/*.d.ts.map
+!README.md
+!LICENSE
+!package.json

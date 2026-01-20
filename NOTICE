@@ -1,0 +1,30 @@
+Upwork Node.js Client Library
+Copyright (c) 2024 Muhammed Mustafa AKŞAM
+
+This library is an unofficial client wrapper for the Upwork API.
+
+IMPORTANT NOTICES:
+
+1. This library is NOT officially affiliated with, endorsed by, or supported by Upwork.
+
+2. "Upwork" is a trademark of Upwork Global Inc.
+
+3. This library is licensed under the MIT License (see LICENSE file).
+
+4. Your use of the Upwork API through this library is governed by:
+   - Upwork API Terms of Use: https://www.upwork.com/legal#api
+   - Upwork Terms of Service: https://www.upwork.com/legal
+
+5. You are responsible for ensuring your application complies with all Upwork 
+   policies and terms of service.
+
+6. The MIT License applies to this client library code only. It does not grant 
+   any rights to Upwork's API, services, trademarks, or data.
+
+7. Before using this library in production, please:
+   - Register your application at https://www.upwork.com/ab/account-security/api
+   - Review and accept Upwork's API Terms of Use
+   - Ensure compliance with Upwork's rate limits and usage policies
+
+For support regarding the Upwork API itself, please contact Upwork support or 
+visit https://developers.upwork.com/
